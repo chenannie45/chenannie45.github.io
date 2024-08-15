@@ -7,6 +7,7 @@ table#tlayout {
 }
 
 body {
+	font-size: 110%;
 	background: white;
 	font-family: Georgia, serif;
 	padding-bottom: 8px;
@@ -42,6 +43,7 @@ body {
 }
 
 #layout-menu a {
+	font-size: 110%;
 	line-height: 1.5em;
 	margin-left: 0.5em;
 }
@@ -65,11 +67,11 @@ a:hover {
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #022b6d;
+	color: #C11B17;
 	border-bottom: 1px gray solid;
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #527bbd;
+	color: #C11B17;
 	text-decoration: none;
 }
 #layout-menu a:hover {
@@ -77,6 +79,7 @@ a:hover {
 }
 
 div.menu-category {
+	font-size: 110%;
 	border-bottom: 1px solid gray;
 	margin-top: 0.8em;
 	padding-top: 0.2em;
