@@ -6,6 +6,11 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<style type="text/css">
+#journal-more { display: none; }
+#journal-preview-controls { margin-left: 2em; }
+#journal-toggle-link { display: inline-block; margin-bottom: 1em; }
+</style>
 <title>Publications </title>
 </head>
 <body>
@@ -33,6 +38,7 @@ Morgan & Claypool Publishers, 2022. [<a href="https://www.morganclaypool.com/doi
 </ul>
 
 <h2>Journal Papers:</h2>
+<div id="journal-list">
 <ul>
 <li><p>
 <b><font color="#696969">A Survey of Deep Graph Learning Under Distribution Shifts: From Graph Out-of-Distribution Generalization to Adaptation </font></b> <br>
@@ -56,13 +62,6 @@ ACM Computing Surveys (CSUR), 2024.</p>
 </ul>
 <ul>
 <li><p>
-<b><font color="#696969">Learning Hierarchical Task Structures for Few-shot Graph Classification</font></b> <br>
-Song Wang, Yushun Dong, Xiao Huang, <b>Chen Chen</b>, Jundong Li<br> 
-ACM Transactions on Knowledge Discovery from Data (TKDD), 2023.</p>
-</li>
-</ul>
-<ul>
-<li><p>
 <b><font color="#696969">Fairness in Graph Mining: A Survey</font></b><br>
 Yushun Dong, Jing Ma, Song Wang, <b>Chen Chen</b>, Jundong Li<br> 
 IEEE Transactions on Knowledge and Data Engineering (TKDE), 2023. </p>
@@ -73,6 +72,17 @@ IEEE Transactions on Knowledge and Data Engineering (TKDE), 2023. </p>
 <b><font color="#696969">Understanding the Coevolution of Mask Wearing and Epidemics: A Network Perspective</font></b> <br>
 Zirou Qiu, Baltazar Espinoza, Vitor V Vasconcelos, <b>Chen Chen</b>, Sara M Constantino, Stefani A Crabtree, Luojun Yang, Anil Vullikanti, Jiangzhuo Chen, Jörgen Weibull, Kaushik Basu, Avinash Dixit, Simon A Levin, Madhav V Marathe<br>
 Proceedings of the National Academy of Sciences (PNAS), 2022. </p>
+</li>
+</ul>
+<div id="journal-preview-controls">
+<a href="#" id="journal-toggle-link" onclick="toggleJournalList(event);">Show complete list</a>
+</div>
+<div id="journal-more">
+<ul>
+<li><p>
+<b><font color="#696969">Learning Hierarchical Task Structures for Few-shot Graph Classification</font></b> <br>
+Song Wang, Yushun Dong, Xiao Huang, <b>Chen Chen</b>, Jundong Li<br> 
+ACM Transactions on Knowledge Discovery from Data (TKDD), 2023.</p>
 </li>
 </ul>
 <ul>
@@ -129,6 +139,8 @@ ACM Transactions on Knowledge Discovery in Data (TKDD), 2016. </p>
 IEEE Transactions on Knowledge and Data Engineering (TKDE), 2016. </p>
 </li>
 </ul>
+</div>
+</div>
 
 <h2>Conference Papers</h2>
 <ul>
@@ -496,5 +508,20 @@ Page revised 2026-05-08 US Eastern Time, by <a href="http://jemdoc.jaboc.net/">j
 </div>
 </div>
 </div>
+<script type="text/javascript">
+function toggleJournalList(event) {
+  if (event) { event.preventDefault(); }
+  var more = document.getElementById('journal-more');
+  var link = document.getElementById('journal-toggle-link');
+  if (!more || !link) { return; }
+  if (more.style.display === 'none' || more.style.display === '') {
+    more.style.display = 'block';
+    link.textContent = 'Hide complete list';
+  } else {
+    more.style.display = 'none';
+    link.textContent = 'Show complete list';
+  }
+}
+</script>
 </body>
 </html>
